@@ -28,7 +28,7 @@ def delete_report():
         password=request.values['password']
         if (password==""):
            return "input empty!"
-        elif (password=="Honestmc"):
+        elif (password=="123456"):
            os.system("cd /home/pi/report;ls;rm -rf /home/pi/report/*;ls")
            return "success!"
         else :
@@ -40,7 +40,7 @@ def update_fw():
         password=request.values['password']
         if (password==""):
             return "input empty!"
-        elif (password=="Honestmc"):
+        elif (password=="123456"):
 
             md5tag = request.values['md5tag']
             md5path = open('/home/pi/tmp/UPDATE.md5tag','w')
